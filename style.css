@@ -1,0 +1,108 @@
+/* Add some styling for the to-do list */
+
+body {
+    background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    ;
+    text-align: center;
+}
+
+h1 {
+    color: #f7eddb;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding: auto;
+    margin: auto;
+    display: block;
+}
+
+li {
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    align-items: center;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"] {
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    align-items: center;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: rgb(68, 89, 132);
+    outline: none;
+}
+
+button {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(68, 89, 132);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+button:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+button.delete-button,
+button.complete-button {
+    position: absolute;
+    top: 0px;
+}
+
+button.delete-button {
+    left: 488px;
+}
+
+button.complete-button {
+    left: 600px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+div {
+    width: 50%;
+    margin: auto;
+}
